@@ -6,5 +6,10 @@
             "email": "yurialves2@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Yuri\\": "src"
+        }
+    }
 }
