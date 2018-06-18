@@ -1,0 +1,10 @@
+{
+    "name": "yuri/micro-framework-php",
+    "authors": [
+        {
+            "name": "Yuri Alves de Almeida",
+            "email": "yurialves2@gmail.com"
+        }
+    ],
+    "require": {}
+}
