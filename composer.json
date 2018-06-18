@@ -6,7 +6,12 @@
             "email": "yurialves2@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "illuminate/support": "^5.6"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.3"
+    },
     "autoload": {
         "psr-4": {
             "Yuri\\": "src"
