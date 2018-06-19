@@ -1,6 +1,6 @@
 <?php
 
-namespace yuri\DI;
+namespace Yuri\DI;
 
 class Resolver
 {
@@ -23,8 +23,7 @@ class Resolver
         
         $class = new \ReflectionClass($class);
 
-        if (!$class->isInstantiable())
-        {
+        if (!$class->isInstantiable()) {
             throw new \Exception('{$class} is not instantiable');
         }
 
@@ -46,7 +45,7 @@ class Resolver
         foreach ($parameters as $parameter) {
             $dependency = $parameter->getClass();
             if ($dependency) {
-                $dependencies[] = $this->class($dependency->name, $this->dependencies);  
+                $dependencies[] = $this->class($dependency->name, $this->dependencies);
             } else {
                 $dependencies[] = $this->getDependencies($parameter);
             }
